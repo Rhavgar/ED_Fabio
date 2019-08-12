@@ -347,6 +347,8 @@ tipo_no* copiar_arvore(tipo_no *raiz) // 179
     novo = novo_no(raiz->dado);
     novo->ptr_esquerda = copiar_arvore(raiz->ptr_esquerda);
     novo->ptr_direita = copiar_arvore (raiz->ptr_direita);
+
+    return novo;
   }
   else
   {
